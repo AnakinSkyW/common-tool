@@ -16,6 +16,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class ApiDataResult<T> extends ApiResult {
+
     private T data;
 
     public ApiDataResult(int code, String message, T data) {
